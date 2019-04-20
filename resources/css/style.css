@@ -1,0 +1,154 @@
+/* Text-animated */
+.bounce-enter-active {
+    animation: bounce-in .5s;
+  }
+  .bounce-leave-active {
+    animation: bounce-in .5s reverse;
+  }
+  @keyframes bounce-in {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+/* request-imagen */
+
+.bg-request {
+  background-color: #1E3F5A !important;
+}
+
+
+/* Portafolio */
+#portfolio .container-fluid {
+  max-width: 1920px;
+}
+
+#portfolio .container-fluid .portfolio-box {
+  position: relative;
+  display: block;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgb(1, 190, 254);
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
+  font-size: 1.2rem;
+}
+
+#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+
+/* parallax */
+.parallax {
+
+  /* Set a specific height */
+  min-height: 100px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* footer */
+
+.context-dark, .bg-gray-dark, .bg-primary {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+  color: #ffffff;
+}
+.nav-list li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+  margin-left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 23px;
+  font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+.social-container .col {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-list li a:before {
+  content: "\f14f";
+  font: 400 21px/1 "Material Design Icons";
+  color: #4d6de6;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: -28px;
+  margin-right: 7px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .22s ease;
+}
